@@ -16,7 +16,7 @@ def solution(bandage, health, attacks):
                     # print(i, health, successCount)
                     break
     #           공격하는 시간이 아닐 때
-                elif j[0] >= i:
+                elif j[0] > i:
                     print(j[0])
                     successCount += 1
                     if successCount == bandage[0]:

@@ -8,6 +8,8 @@ com = combinations(height_list, 7)
 
 for i in com:
     if sum(i) == 100:
-        for j in sorted(i):
+        toList = list(i)
+        toList.sort()
+        for j in toList:
             print(j)
-        break    
+        break
